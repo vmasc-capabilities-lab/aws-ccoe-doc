@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/logo-c.png',
+  favicon: 'img/favicon.ico',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -37,14 +37,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/vmasc-capabilities-lab/aws-ccoe-doc',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/vmasc-capabilities-lab/aws-ccoe-doc',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -57,21 +57,27 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: '',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'AWS-CCOE Logo',
+          src: 'img/Logo_BW.svg',
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
+            type: 'docSidebar',
+            sidebarId: 'developerSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Developers',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'researchSidebar',
+            position: 'left',
+            label: 'Researchers',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/vmasc-capabilities-lab/aws-ccoe-doc',
             label: 'GitHub',
             position: 'right',
           },
@@ -90,27 +96,10 @@ const config = {
             ],
           },
           {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
             title: 'More',
             items: [
               {
-                label: 'Blog',
+                label: 'Forum',
                 to: '/blog',
               },
               {
@@ -120,7 +109,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Capabilities Lab, Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
