@@ -8,25 +8,25 @@ const FeatureList = [
     // Svg: require('@site/static/img/SpiritMark_BW.svg').default,
     description: (
       <>
-        The Cloud Center of Excellence strives to discover and integrate implementations of AWS features within software prototypes.
+        The Cloud Center of Excellence provides Researchers the ability to discover and integrate cloud services within their projects.
       </>
     ),
   },
   {
-    title: 'Tailored for Both',
+    title: 'Tailored for Researchers',
     // Svg: require('@site/static/img/SpiritMark_BW.svg').default,
     description: (
       <>
-        Documentation related to the Cloud Center of Excellence will be separated for Developers and Researchers.
+        All documentation from the Cloud Center of Excellence is created a Researcher's perspective.
       </>
     ),
   },
   {
-    title: 'Support in the Future',
+    title: 'Long Term Support',
     // Svg: require('@site/static/img/SpiritMark_BW.svg').default,
     description: (
       <>
-        The Roadmap for the Cloud Center of Excellence aims to keep our mission for as long as possible. 
+        The Cloud Center of Excellence will be consistently updated over time. 
       </>
     ),
   },

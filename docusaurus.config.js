@@ -34,17 +34,9 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/vmasc-capabilities-lab/aws-ccoe-doc',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/vmasc-capabilities-lab/aws-ccoe-doc',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -61,25 +53,51 @@ const config = {
         logo: {
           alt: 'AWS-CCOE Logo',
           src: 'img/Logo_BW.svg',
+          srcDark: 'img/Logo_C.svg',
         },
         items: [
+          {to: '/', label: 'Home', position: 'left', className: 'home'},
           {
-            type: 'docSidebar',
-            sidebarId: 'developerSidebar',
+            type: 'doc',
+            docId: 'getting-started',
             position: 'left',
-            label: 'Developers',
+            label: 'Getting Started',
           },
           {
             type: 'docSidebar',
-            sidebarId: 'researchSidebar',
+            sidebarId: 'guide',
+            label: 'AWS Guide',
             position: 'left',
-            label: 'Researchers',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'training',
+            label: 'Training',
+            position: 'left',
+          },
+          {
+            type: 'doc',
+            docId: 'support',
+            position: 'left',
+            label: 'Support',
+          },
+          {
+            type: 'doc',
+            docId: 'service-catalog',
+            position: 'left',
+            label: 'Service Catalog',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/vmasc-capabilities-lab/aws-ccoe-doc',
             label: 'GitHub',
             position: 'right',
+          },
+          {
+            type: 'doc',
+            docId: 'team',
+            position: 'left',
+            label: 'Team',
           },
         ],
       },
@@ -90,8 +108,12 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Training',
+                to: '/docs/training/intro',
+              },
+              {
+                label: 'AWS Guide',
+                to: '/docs/guide/intro',
               },
             ],
           },
@@ -99,12 +121,12 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Forum',
+                label: 'Blog',
                 to: '/blog',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/vmasc-capabilities-lab/aws-ccoe-doc',
               },
             ],
           },

@@ -7,4 +7,4 @@ tags: [hello, blog, ccoe]
 
 Welcome to the AWS-CCOE Blog! 
 
-Here we'll give periodic updates on our current progress, direction, and aspirations. 
+Here we'll give periodic updates on our current progress, direction, and goals. 
