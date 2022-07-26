@@ -56,7 +56,7 @@ This section details steps to get our documentation portal up and running on you
 1. Clone the repo
 
 ```sh
-git clone https://github.com/dyte-in/docs.git
+git clone 
 ```
 
 2. Install NPM packages
